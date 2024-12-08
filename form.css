@@ -1,0 +1,203 @@
+body{
+    height: 100vh;
+    display: flex;
+}
+
+
+
+
+.sideSection{
+    position: relative;
+    width: 400px;
+    height: 100%;
+    background-image: url(https://app.ruul.io/images/onboarding/bg.png);
+    padding: 30px;
+    color: white;
+
+    a{
+        color: white;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    h1{
+        margin-block: 30px 20px;
+        font-size: 24px;
+        line-height: 1.5;
+    }
+
+    li{
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+
+    img{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+.sideSection ul li:before{
+    content: '\f00c';
+    font-family: 'FontAwesome';
+    margin-right: 10px;    
+}
+
+
+main{
+    width: calc(100% - 400px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .pay{
+        margin-bottom: 50px;
+        display: none;
+    }
+
+    img{
+        width: 50px;
+    }
+
+
+    h1{
+        margin-bottom: 30px;
+        font-size: 24px;
+        font-weight: 600;
+        color: var(--main-green);
+    }
+
+    form{
+        width: 300px;
+    }
+
+    label{
+        display: block;
+        margin-bottom: 5px;
+        color: rgb(87 106 105 );
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    input{
+        width: 100%;
+        padding: 10px;
+        border-radius: 8px;
+        outline: none;
+        border: 1px solid rgba(128, 128, 128, 0.35);
+    }
+
+    .Fgpass{
+        display: flex;
+        justify-content: space-between;
+
+        a{
+            color: var(--main-green);
+            font-size: 14px;
+            font-weight: 700;
+            text-decoration: underline;
+        }
+    }
+
+    form>*{
+        margin-bottom: 15px;
+    }
+
+    button{
+        width: 100%;
+        background-color: var(--main-green);
+        padding-block: 10px;
+        border-radius: 8px;
+        border: none;
+
+
+        a{
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+
+    hr{
+        height: 2px;
+        width: 280px;
+        margin-block: 20px;
+    }
+
+    .or{
+        position: relative;
+    }
+
+    .ruulApp{
+        margin-block: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid rgba(128, 128, 128, 0.35);
+        padding: 5px;
+        border-radius: 5px;
+
+
+        img{
+            width: 30px;
+        }
+
+        a{
+            color: black;
+            font-weight: 600;
+            font-size: 14px;
+        }
+    }
+
+    .New {
+
+        span{
+            font-size: 14px;
+        }
+
+        a{
+            font-size: 14px;
+            color: var(--main-green);
+            font-weight: 700;
+            text-decoration: underline;
+        }
+    }
+
+}
+
+main .or::before{
+    content: 'or';
+    color:rgb(128, 128, 128) ;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 13px;
+    background-color: white;
+    padding-inline: 7px;
+}
+
+.fixedIcons{
+    display: block;
+}
+
+@media (max-width: 767px){
+.sideSection{
+    display: none;
+}
+
+main{
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    padding-block:50px ;
+}
+
+.pay{
+    display: block !important;
+}
+
+}

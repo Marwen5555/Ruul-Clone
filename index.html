@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ruul | Invoicing And Payment</title>
+    <!-- Font Awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Font family link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href=""
+            ><img
+              alt="Ruul"
+              src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6736f90415432ba5396cadcf_ruul-logo-25.svg"
+          /></a>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="">Solutions</a>
+              <i class="fa-solid fa-chevron-down soluttion"></i>
+            </li>
+            <li><a href="">For Businesses</a></li>
+            <li><a href="">Pricing</a></li>
+            <li>
+              <a href="">Ressources</a>
+              <i class="fa-solid fa-chevron-down ressources"></i>
+            </li>
+          </ul>
+        </nav>
+        <nav class="mobile-nav">
+          <ul>
+            <li class="slt">
+              <a href="">Solutions</a>
+              <i class="fa-solid fa-chevron-down sltion"></i>
+              <ul class="solutionUL">
+                <li><a href="">Billing and Chekout</a></li>
+                <li><a href="">Payement Collection</a></li>
+                <li><a href="">Tax and Compliance</a></li>
+                <li><a href="">CRM and Analytics</a></li>
+              </ul>
+            </li>
+            <li><a href="">For Businesses</a></li>
+            <li><a href="">Pricing</a></li>
+            <li class="sltt">
+              <a href="">Ressources</a>
+              <i class="fa-solid fa-chevron-down ressources rsc"></i>
+              <ul class="ressourcesUL">
+                <li><a href="">Billing and Chekout</a></li>
+                <li><a href="">Payement Collection</a></li>
+                <li><a href="">Tax and Compliance</a></li>
+                <li><a href="">CRM and Analytics</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <a href="form.html" class="login">Login</a>
+        <i class="fa-solid fa-bars burger"></i>
+        <div class="solution-menu">
+          <div>
+            <span>Rull For Freelancers</span>
+            <p>
+              A new connection protocol for modern talents to connect with
+              businesses globally.
+            </p>
+          </div>
+          <div class="solution-links">
+            <div>
+              <a href="">Global Invocing</a>
+              <a class="sLink" href=""
+                >Invoice globally without a legal entity
+              </a>
+            </div>
+            <div>
+              <a href="">Payment Collection</a>
+              <a class="sLink" href=""
+                >Colect fast and secure global payement</a
+              >
+            </div>
+            <div>
+              <a href="">Crypto Payout</a>
+              <a class="sLink" href=""
+                >Get paid in cryptocuurency only in Rull</a
+              >
+            </div>
+            <div>
+              <a href="">Early Pay</a>
+              <a class="sLink" href="">Get paid, without the wait</a>
+            </div>
+          </div>
+        </div>
+        <div class="ressources-menu">
+          <div class="partner">
+            <span>Partner Programs</span>
+            <div>
+              <a href="">Partners</a>
+              <a href=""
+                >Join our partner ecosystem, elevate your marketing & product
+                impact.</a
+              >
+            </div>
+            <div>
+              <a href="">Affiliate Program</a>
+              <a href=""
+                >Help us revolutionize work dynamics, and generate income.</a
+              >
+            </div>
+            <div>
+              <a href="">Referral Program</a>
+              <a href="">Refer and Earn Cash Rewards</a>
+            </div>
+            <div>
+              <a href="">Ambassador Program</a>
+              <a href="">Give Back, Generate Passive Income</a>
+            </div>
+          </div>
+          <div class="user">
+            <span>User Roussources</span>
+            <div>
+              <a href="">About Us</a>
+              <a href=""
+                >Read about our vision for shaping the future of work.</a
+              >
+            </div>
+            <div>
+              <a href="">Blog</a>
+              <a href=""
+                >Keep up with the latest news and trends in the global work
+                landscape.</a
+              >
+              <div>
+                <a href="">Support</a>
+                <a href=""
+                  >Get more detailed information about Ruul products.</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="landing">
+      <div class="container">
+        <div class="content">
+          <h1>No Company Needed. <span class="edit">Just</span> Ruul.</h1>
+          <p>
+            Everything solo professionals need to work with businesses and
+            collect payment.
+          </p>
+          <button class="btn-call">Book a call</button>
+          <button class="btn-sign">Sign up now</button>
+        </div>
+        <div class="image">
+          <img
+            src="Images/Rull-landing-image.jpg"
+            loading="eager"
+            alt="Invoice without a company."
+          />
+          <div class="img-content">
+            <div class="bullshit">
+              <a href="">Excellent</a>
+              <div class="icons">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <span>360 reviews on</span>
+          </div>
+        </div>
+      </div>
+      <p class="talents">
+        Our talents work with the greatest 10.000+ companies
+      </p>
+      <div class="companies">
+        <img
+          src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6582dcc49f768268b6499135_Group%205134.webp"
+          loading="lazy"
+          id="w-node-_10399a41-e446-e254-37f0-e42f3be0f590-3be0f58c"
+          alt="Toyota"
+        />
+        <img
+          src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6582dcc4453e168320e49cc7_Group%205132.webp"
+          loading="lazy"
+          id="w-node-_10399a41-e446-e254-37f0-e42f3be0f591-3be0f58c"
+          alt="Camper"
+        />
+        <img
+          src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6582dcc52471af5d4bc5a355_Layer_1.webp"
+          loading="lazy"
+          id="w-node-_10399a41-e446-e254-37f0-e42f3be0f592-3be0f58c"
+          alt="Stoheby's"
+        />
+        <img
+          src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6582dcc57199a8cd6f5237af_Group%205135.webp"
+          loading="lazy"
+          id="w-node-_10399a41-e446-e254-37f0-e42f3be0f593-3be0f58c"
+          alt="Kpmg"
+        />
+        <img
+          src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6582dcc4372420389eed3355_Group%205131.webp"
+          loading="lazy"
+          id="w-node-_10399a41-e446-e254-37f0-e42f3be0f594-3be0f58c"
+          alt="Channel"
+        />
+        <img
+          src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6582dcc4770f02752bf71fe0_Group%205133.webp"
+          loading="lazy"
+          id="w-node-_10399a41-e446-e254-37f0-e42f3be0f595-3be0f58c"
+          alt="Klarna"
+        />
+      </div>
+    </section>
+    <section class="NUTSHELL">
+      <div class="container">
+        <span>RUUL IN A NUTSHELL </span>
+        <div class="text">
+          Ruul resells your professional services
+          <p class="first">🧑‍💻</p>
+          to your clients, handles Billing & Payment Collection
+          <p class="second">💳</p>
+          so you
+          <p class="third">don't have to.</p>
+        </div>
+      </div>
+    </section>
+    <section class="tab">
+      <div class="container">
+        <div class="links">
+          <a data-target="contentOne" class="active" href="#"
+            >Billing & Checkout
+          </a>
+          <a data-target="contentTwo" href="#">Payment Collection </a>
+          <a data-target="contentThree" href="#">Tax & Compliance</a>
+          <a data-target="contentFour" href="#">CRM & Analytics</a>
+        </div>
+        <div id="contentOne" class="checkout out">
+          <p class="paragraph">
+            Provide services. Bill your client. Get paid. Repeat. All with
+            Ruul's Billing & Checkout system.
+          </p>
+          <a class="learnMore" href=""
+            >Learn More <i class="fa-solid fa-arrow-right-long fa-beat"></i
+          ></a>
+          <div class="images">
+            <img
+              sizes="(max-width: 767px) 100vw, (max-width: 991px) 361.359375px, 451.6953125px"
+              srcset="
+                https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6700e9caff52c415dcf57378_new-invoice-p-500.png 500w,
+                https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6700e9caff52c415dcf57378_new-invoice.avif      996w
+              "
+              alt=""
+              src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6700e9caff52c415dcf57378_new-invoice.avif"
+              loading="lazy"
+            />
+            <img
+              sizes="(max-width: 767px) 100vw, (max-width: 991px) 361.359375px, 451.6953125px"
+              srcset="
+                https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6700e9ca34f5bf31b2e9aba2_checkout-p-500.png 500w,
+                https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6700e9ca34f5bf31b2e9aba2_checkout.avif      996w
+              "
+              alt=""
+              src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6700e9ca34f5bf31b2e9aba2_checkout.avif"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div id="contentTwo" class="paymentCollection out">
+          <p class="paragraph">
+            Ruul onboards your client, handles billing and payment collection,
+            so you don’t have to.
+          </p>
+          <a class="learnMore" href=""
+            >Learn More <i class="fa-solid fa-arrow-right-long fa-beat"></i
+          ></a>
+          <div class="images">
+            <img
+              sizes="(max-width: 767px) 100vw, (max-width: 991px) 361.359375px, 451.6953125px"
+              srcset="
+                https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6700e9caff52c415dcf5737d_payment-accounts-p-500.png 500w,
+                https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6700e9caff52c415dcf5737d_payment-accounts.avif      996w
+              "
+              alt=""
+              src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6700e9caff52c415dcf5737d_payment-accounts.avif"
+              loading="lazy"
+            />
+            <img
+              sizes="(max-width: 767px) 100vw, (max-width: 991px) 361.359375px, 451.6953125px"
+              srcset="
+                https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6700e9ca00dd1f14f7d98242_payout-methods-p-500.png 500w,
+                https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6700e9ca00dd1f14f7d98242_payout-methods.avif      996w
+              "
+              alt=""
+              src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6700e9ca00dd1f14f7d98242_payout-methods.avif"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div id="contentThree" class="tax out">
+          <p class="paragraph">
+            Ruul handles all your sales tax and compliance for every payment,
+            cutting down your paperwork.
+          </p>
+          <a class="learnMore" href=""
+            >Learn More <i class="fa-solid fa-arrow-right-long fa-beat"></i
+          ></a>
+          <div class="images">
+            <img
+              sizes="(max-width: 767px) 100vw, (max-width: 991px) 361.359375px, 451.6953125px"
+              srcset="
+                https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6700e9cab3a06c514d7dd471_sales-tax-p-500.png 500w,
+                https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6700e9cab3a06c514d7dd471_sales-tax-p-800.png 800w,
+                https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6700e9cab3a06c514d7dd471_sales-tax.avif      996w
+              "
+              alt=""
+              src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6700e9cab3a06c514d7dd471_sales-tax.avif"
+              loading="lazy"
+            />
+            <img
+              sizes="(max-width: 767px) 100vw, (max-width: 991px) 361.359375px, 451.6953125px"
+              srcset="
+                https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6700e9cab83ab0f475349406_agreements-p-500.png 500w,
+                https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6700e9cab83ab0f475349406_agreements.avif      996w
+              "
+              alt=""
+              src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6700e9cab83ab0f475349406_agreements.avif"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div id="contentFour" class="Analytics out">
+          <p class="paragraph">
+            Clients. Projects. Invoices. Agreements. Stay organized and track
+            your performance with ease.
+          </p>
+          <a class="learnMore" href=""
+            >Learn More <i class="fa-solid fa-arrow-right-long fa-beat"></i
+          ></a>
+          <div class="images">
+            <img
+              sizes="(max-width: 767px) 100vw, (max-width: 991px) 361.359375px, 451.6953125px"
+              srcset="
+                https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6700e9cae3174adf8d5227c7_projects-p-500.png 500w,
+                https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6700e9cae3174adf8d5227c7_projects-p-800.png 800w,
+                https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6700e9cae3174adf8d5227c7_projects.avif      996w
+              "
+              alt=""
+              src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6700e9cae3174adf8d5227c7_projects.avif"
+              loading="lazy"
+            />
+            <img
+              sizes="(max-width: 767px) 100vw, (max-width: 991px) 361.359375px, 451.6953125px"
+              srcset="
+                https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6700e9ca49eca345f7b5b89a_total-revenue-p-500.png 500w,
+                https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6700e9ca49eca345f7b5b89a_total-revenue.avif      996w
+              "
+              alt=""
+              src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6700e9ca49eca345f7b5b89a_total-revenue.avif"
+              loading="lazy"
+              class="tab_mock right"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section class="layout-tri">
+      <div class="container">
+        <div>
+          <img
+            src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6718745a731ac80375b19807_icon-1.avif"
+            loading="lazy"
+            alt=""
+          />
+          <div class="content">
+            <span>Global Coverage</span>
+            <p>
+              Invoice your business clients in 190 countries and get paid in 140
+              currencies.
+            </p>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6718745993f3aece411b31ee_icon-2.avif"
+            loading="lazy"
+            alt="Icon of a bar chart, symbolizing data analysis or performance metrics."
+          />
+          <div class="content">
+            <span>Faster Payments</span>
+            <p>
+              Reduce your payment collection time, and cut down on unpaid
+              invoices.
+            </p>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/6718745a1597b1ca9285c3ef_icon-3.avif"
+            loading="lazy"
+            alt="Icon depicting global accessibility for freelance services and collaborations."
+          />
+          <div class="content">
+            <span>Pay-as-you-go</span>
+            <p>
+              No upfront payments or monthly subscriptions. Pay only when you
+              use.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <section class="model">
+      <div class="container">
+        <div class="content">
+          <h3>OUR MODEL</h3>
+          <p class="text">
+            Ruul, as your <span class="decoration">Merchant of Record</span>, is
+            the legal entity selling your professional services to your business
+            clients compliantly in 190 countries.
+          </p>
+          <button class="btn-learn">Learn more</button>
+          <button class="btn-sign">Open an account</button>
+        </div>
+        <div>
+          <div class="cont cont-model">
+            <div>
+              <span>B2B Invoicing</span>
+              <p>Provides B2B invoices to clients for easy accounting.</p>
+            </div>
+            <div>
+              <span>Global Sales Tax </span>
+              <p>Handel global sales tax charging and remittance.</p>
+            </div>
+          </div>
+          <div class="cont">
+            <div>
+              <span>Payment Options</span>
+              <p>Offers local & international payment methods.</p>
+            </div>
+            <div>
+              <span>Onboarding & Support</span>
+              <p>Handles all payment-related support queries.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="features">
+      <h3>UNIQUE FEATURES</h3>
+      <span>What makes Ruul so different ?</span>
+      <div class="container">
+        <div class="unique one">
+          <img
+            src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/66e123ebfcc7148c937889a9_cryptopMan.png"
+            loading="lazy"
+            sizes="(max-width: 479px) 72vw, 220px"
+            alt="A man with curly hair is smiling warmly, exuding a cheerful and friendly demeanor."
+            srcset="
+              https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/66e123ebfcc7148c937889a9_cryptopMan-p-500.png 500w,
+              https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/66e123ebfcc7148c937889a9_cryptopMan.png       560w
+            "
+          />
+          <p>Crypto Payout</p>
+          <div>
+            <button><i class="fa-solid fa-arrow-right"></i></button>
+            <span>ONLY AT RUUL</span>
+          </div>
+        </div>
+        <div class="two">
+          <img
+            src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/66d6b1ddfa48c134cb3a3ebf_support%20(4)%201.png"
+            loading="lazy"
+            alt=""
+          />
+          <p>Fastest payout delivery</p>
+          <span> <span class="special">1</span> Day</span>
+        </div>
+        <div class="tranparent"></div>
+        <div class="four">
+          <img
+            src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/66e12bf2bef92096cd1fa685_vector_coins.png"
+            loading="lazy"
+            alt="Coins"
+          />
+          <p>Financial flexibility</p>
+          <span> <span class="special">140</span> currencies</span>
+        </div>
+        <div class="unique five">
+          <img
+            src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/66e127a306baa38b014a68b9_vector_money.png"
+            loading="lazy"
+            alt=""
+          />
+          <p>7 years of experience in the market</p>
+          <div>
+            <span class="special">$170m</span> <span>total processed </span>
+          </div>
+        </div>
+        <div class="six">
+          <p>Widest coverage available</p>
+          <span> <span class="special">190</span> countries</span>
+        </div>
+        <div class="tranparent"></div>
+        <div class="eight">
+          <p>Excellent customer rating</p>
+          <span class="special">4.7</span>
+        </div>
+        <div class="unique nine">
+          <img
+            src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/66e12d57954586b3cc327a51_earlypay_.png"
+            loading="lazy"
+            width="220"
+            sizes="(max-width: 479px) 72vw, 220px"
+            alt="A woman in a yellow jacket holds a phone displaying text, showcasing a vibrant and engaging moment."
+            srcset="
+              https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/66e12d57954586b3cc327a51_earlypay_-p-500.png 500w,
+              https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/66e12d57954586b3cc327a51_earlypay_.png       738w
+            "
+          />
+          <p>Early Pay</p>
+          <div>
+            <button><i class="fa-solid fa-arrow-right"></i></button>
+            <span>ONLY AT RUUL</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="testimonials">
+      <div class="container">
+        <div class="first">
+          <img
+            src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/66deb4f1b93f893e92c3dfe1_Team%20Avatar%2001.svg"
+            loading="lazy"
+            alt=""
+          />
+          <h4>
+            “Ruul offers a glitch-free, robust platform with a modern interface,
+            maintained well for seamless invoicing over two years.”
+          </h4>
+          <div class="text">
+            <p>Fenna Van Dijk</p>
+            <span>Freelance Web Developer</span>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://cdn.prod.website-files.com/63fffb3513dd1b7acde9449c/66deb4f1b93f893e92c3e000_Team%20Avatar%2003.svg"
+            loading="lazy"
+            alt=""
+          />
+          <h4>
+            “Ruul allows me to work remotely without hassle, ensuring easy
+            invoicing and payment, saving time for more important tasks.”
+          </h4>
+          <div class="text">
+            <p>Carlos Del Moral Vilchez</p>
+            <span>Freelance UX Designer </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="questions">
+      <div class="questions-header">
+        <span>Hey! Have any questions?</span>
+        <p>Frequently Asked Questions</p>
+      </div>
+      <div class="container">
+        <div>
+          <div data="questionOne" class="question">
+            <div>What does Ruul do ?</div>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="para" id="questionOne">
+            Ruul takes the hassle out of freelancing by managing invoicing,
+            global sales tax compliance, multiple payment methods, and client
+            support. We bill clients directly, issue proper B2B invoices, handle
+            complex sales tax remittance across borders, and offer various local
+            and international payment options. Plus, we manage onboarding and
+            payment inquiries, so you can keep your focus on the work, not the
+            red tape.
+          </div>
+        </div>
+        <div>
+          <div data="questionTwo" class="question">
+            <div>Who is Ruul for ?</div>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="para" id="questionTwo">
+            Ruul is for freelancers and independent contractors who want to
+            manage their finances without running a company. It's ideal for
+            those working across borders or dealing with multiple currencies.
+          </div>
+        </div>
+        <div>
+          <div data="questionThree" class="question">
+            <div>How does Ruul work ?</div>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="para" id="questionThree">
+            Create Invoice: Enter client information and create the invoice. Add
+            Collection Account: Add a bank, Cenoa, or Binance account to collect
+            payments. Client Payment: Your client can make the payment via bank
+            transfer or credit card using the payment link generated with the
+            invoice. Collect Your Payout: After your client's payment is
+            processed, we deduct our commission and transfer the remaining
+            amount to your bank account.
+          </div>
+        </div>
+        <div>
+          <div data="questionFour" class="question">
+            <div>Is there a subscription fee ?</div>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="para" id="questionFour">
+            No, you can get started for free. Ruul takes a small commission from
+            each invoice. There are no monthly subscriptions, hidden costs, or
+            surprises. Check out the pricing calculator here.
+          </div>
+        </div>
+        <div>
+          <div data="questionFive" class="question">
+            <div>How long does take with me to receive the payment ?</div>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="para" id="questionFive">
+            Once your client completes the payment and the funds arrive at our
+            bank account, the payout is initiated immediately. Collecting your
+            payout in your local currency; the funds arrive in your bank account
+            within 24 hours. Collecting your payout in foreign currency; it may
+            take up to 3 business days for the SWIFT transaction to arrive at
+            your account. Collecting your payout in cryptocurrency; the funds
+            arrive at your wallet within seconds once the payout is initiated.
+          </div>
+        </div>
+        <div>
+          <div data="questionSix" class="question">
+            <div>How does my client pay ?</div>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="para" id="questionSix">
+            Each invoice includes a payment link. Your client can use this link
+            to pay without registering on Ruul. They can also sign up and pay
+            from their dashboard. Both bank transfers and credit card payments
+            are supported.
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="account">
+      <div class="container">
+        <div>
+          <h4>Ready to get started?</h4>
+          <p>
+            Join the 100.000+ talents using Ruul. Have doubts? Read 350+ reviews
+            here.
+          </p>
+          <a href="">Open an account <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div>
+          <ul>
+            <li>Get paid in 24 hours</li>
+            <li>Connect bank accounts or wallets</li>
+            <li>No client sign up required</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="blog">
+      <div class="blog-header">
+        <span>Hey! Have any questions?</span>
+        <p>Frequently Asked Questions</p>
+      </div>
+      <div class="container">
+        <div>
+          <div class="image">
+            <img
+              loading="lazy"
+              alt="How to deal with difficult freelance clients"
+              src="https://cdn.prod.website-files.com/6406ef65905f04ce2fddd963/662407e0f22e8a372e796ec1_how-to-deal-with-difficult-freelance-clients.webp"
+              sizes="(max-width: 479px) 100vw, (max-width: 767px) 86vw, (max-width: 991px) 27vw, (max-width: 1439px) 26vw, 337.3359375px"
+              srcset="
+                https://cdn.prod.website-files.com/6406ef65905f04ce2fddd963/662407e0f22e8a372e796ec1_how-to-deal-with-difficult-freelance-clients-p-500.webp   500w,
+                https://cdn.prod.website-files.com/6406ef65905f04ce2fddd963/662407e0f22e8a372e796ec1_how-to-deal-with-difficult-freelance-clients-p-800.webp   800w,
+                https://cdn.prod.website-files.com/6406ef65905f04ce2fddd963/662407e0f22e8a372e796ec1_how-to-deal-with-difficult-freelance-clients-p-1080.webp 1080w,
+                https://cdn.prod.website-files.com/6406ef65905f04ce2fddd963/662407e0f22e8a372e796ec1_how-to-deal-with-difficult-freelance-clients.webp        1200w
+              "
+            />
+          </div>
+          <a href="">How to deal with difficult freelance clients</a>
+        </div>
+        <div>
+          <div class="image">
+            <img
+              loading="lazy"
+              alt="5 top inspiring podcasts for freelancers"
+              src="https://cdn.prod.website-files.com/6406ef65905f04ce2fddd963/6624067ea4bb52f10cbec0fc_5-top-inspiring-podcasts-for-freelancers.jpg"
+              class="c-relatedposts__image"
+            />
+          </div>
+          <a href="">5 top inspiring podcasts for freelancers</a>
+        </div>
+        <div>
+          <div class="image">
+            <img
+              loading="lazy"
+              alt="Mastering Freelance Pitching: A Comprehensive Guide"
+              src="https://cdn.prod.website-files.com/6406ef65905f04ce2fddd963/6624215ed1360a25b9135548_how-to-pitch-your-freelance-services.webp"
+              sizes="(max-width: 479px) 100vw, (max-width: 767px) 86vw, (max-width: 991px) 27vw, (max-width: 1439px) 26vw, 337.3359375px"
+              srcset="
+                https://cdn.prod.website-files.com/6406ef65905f04ce2fddd963/6624215ed1360a25b9135548_how-to-pitch-your-freelance-services-p-500.webp   500w,
+                https://cdn.prod.website-files.com/6406ef65905f04ce2fddd963/6624215ed1360a25b9135548_how-to-pitch-your-freelance-services-p-800.webp   800w,
+                https://cdn.prod.website-files.com/6406ef65905f04ce2fddd963/6624215ed1360a25b9135548_how-to-pitch-your-freelance-services-p-1080.webp 1080w,
+                https://cdn.prod.website-files.com/6406ef65905f04ce2fddd963/6624215ed1360a25b9135548_how-to-pitch-your-freelance-services.webp        1200w
+              "
+            />
+          </div>
+          <a href="">Mastering Freelance Pitshing : A Comprenhensive Guide</a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="links">
+          <div>
+            <span>For Talents</span>
+            <a href="">Billing and Checkout</a>
+            <a href="">Payment Collection</a>
+            <a href="">Tax and Compliance</a>
+            <a href="">Crm and Reporting</a>
+            <a href="">Early Pay</a>
+            <a href="">Crypto Payout</a>
+          </div>
+          <div>
+            <span>For Businesses</span>
+            <a href="">Business Solutions</a>
+            <a href="">Ruul API</a>
+          </div>
+          <div>
+            <span>Ressources</span>
+            <a href="">Pricing</a>
+            <a href="">Blog</a>
+            <a href="">About</a>
+            <a href="">Support</a>
+            <a href="">Contact Us</a>
+            <a href="">Careers</a>
+            <a href="">Download Press Kit</a>
+            <a href="">Sucess Stories</a>
+          </div>
+          <div>
+            <span>Collaborate</span>
+            <a href="">Partners</a>
+            <a href="">Affiliate Program</a>
+          </div>
+          <div>
+            <span>Tools</span>
+            <a href=""> Invoice Generator</a>
+            <a href="">NDA Generator</a>
+            <a href="">Service Agreement Generator</a>
+            <a href="">Freelancer Hourly Rate Calculator</a>
+          </div>
+        </div>
+        <div class="socials">
+          <span>Follow Us</span>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <div class="End">Copyright ©2024 ruul.io</div>
+      </div>
+    </footer>
+    <div class="fixedIcons">
+      <div class="cookies-icn">
+        <img
+          class="cookbtn"
+          src="https://cdn-cookieyes.com/assets/images/revisit.svg"
+          alt="Revisit consent button"
+        />
+      </div>
+      <div class="cookieInterface">
+        <h4>Customize Consent Preferences</h4>
+        <p>
+          We use cookies to help you navigate efficiently and perform certain
+          functions. <br /><br />
+          You will find detailed information about all cookies under each
+          consent category below. <br /><br />The cookies that are categorized
+          as "Necessary" are stored on your browser as they are essential for
+          enabling the basic functionalities of the site. <br /><br />
+          We also use third-party cookies that help us analyze how you use this
+          website, store your preferences, and provide the content and
+          advertisements that are relevant to you. <br /><br />These cookies
+          will only be stored in your browser with your prior consent.
+          <br /><br />
+          You can choose to enable or disable some or all of these cookies but
+          disabling some of them may affect your browsing experience.
+        </p>
+        <div class="cookiesbTNS">
+          <button>Reject All</button>
+          <button>Save My Preferences</button>
+          <button class="active">Accept All</button>
+        </div>
+      </div>
+      <div class="chat-icn">
+        <i class="fa-solid fa-message"></i>
+        <div class="chat-interface">
+          <span class="Ruul">Ruul</span>
+          <div class="welcoming">
+            <span>Hi there 👋 </span>
+            <p>How can we help?</p>
+          </div>
+          <div class="send-msg">
+            <p>Send us a message</p>
+            <i class="fa-solid fa-caret-right"></i>
+          </div>
+          <div class="help">
+            <div>
+              <p>Searsh for help</p>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div>
+              <a href="">Signing up for Ruul</a>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div>
+              <a href="">Veryfing your ID</a>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div>
+              <a href="">Creating your first invoice</a>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div>
+              <a href="">Making payment</a>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
